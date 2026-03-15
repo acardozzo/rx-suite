@@ -1,0 +1,13 @@
+{
+  "name": "rx-suite",
+  "description": "10 prescriptive evaluation skills for Claude Code — code quality, architecture, UX, API, testing, security, operations, documentation, project completeness, and Agno AI specialist. 90 dimensions, 357 sub-metrics.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Ailton Cardozo",
+    "email": "acardozzo@github"
+  },
+  "homepage": "https://github.com/acardozzo/rx-suite",
+  "repository": "https://github.com/acardozzo/rx-suite",
+  "license": "MIT",
+  "keywords": ["rx", "evaluation", "architecture", "security", "ux", "testing", "api", "ops", "documentation", "agno", "prescriptive", "grading"]
+}

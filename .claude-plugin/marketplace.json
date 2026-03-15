@@ -1,0 +1,20 @@
+{
+  "name": "rx-suite-marketplace",
+  "description": "Prescriptive evaluation skills marketplace",
+  "owner": {
+    "name": "Ailton Cardozo",
+    "email": "acardozzo@github"
+  },
+  "plugins": [
+    {
+      "name": "rx-suite",
+      "description": "10 prescriptive evaluation skills — 90 dimensions, 357 sub-metrics",
+      "version": "1.0.0",
+      "source": "./",
+      "author": {
+        "name": "Ailton Cardozo",
+        "email": "acardozzo@github"
+      }
+    }
+  ]
+}

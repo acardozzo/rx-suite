@@ -308,3 +308,5 @@ When `all`: save individual layer scorecards + aggregate to `docs/audits/YYYY-MM
 5. **Round scores to integers.** No decimals in the final scorecard.
 6. **Show the math.** Include the weighted computation in the detail section.
 7. **Top 5 issues must be actionable.** Include file paths and estimated point impact.
+
+8. **Use LSP when available.** If LSP tools are active (pyright/vtsls), leverage type diagnostics for D7 Type Safety scoring and go-to-definition for D2 Dependency Health analysis. LSP provides ground-truth type information that static grep cannot.

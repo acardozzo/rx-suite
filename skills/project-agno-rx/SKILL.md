@@ -365,3 +365,11 @@ Flag any patterns that contradict Agno best practices (agents in loops, raw API 
 14. **Respect the project's deployment context.** If it is a simple script/demo, do not penalize for missing production deployment (D9). Adjust expectations based on project maturity signals.
 
 15. **Cross-reference with Agno cookbook.** When suggesting improvements, reference relevant Agno cookbook examples or documentation patterns where applicable.
+
+16. **Use LSP when available.** If LSP tools are active (pyright for Python), leverage them for deeper analysis beyond grep:
+    - **Go-to-definition** to trace Agent() instantiation sources and verify model types
+    - **Find-references** to count how many places reuse an Agent instance (M1.4 reuse detection)
+    - **Type checking** to verify output_schema is a valid Pydantic model (M1.2)
+    - **Diagnostics** to detect type errors in tool functions, missing return types
+    - **Call hierarchy** to trace sync chain depth through agent.run() → tool → external call
+    LSP provides ground-truth type information that grep patterns cannot — prefer LSP findings over grep when both are available.

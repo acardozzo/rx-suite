@@ -266,3 +266,5 @@ When `all`: save individual layer scorecards + aggregate to `docs/audits/YYYY-MM
 13. **Per-dimension improvement plans are mandatory.** Every dimension scoring below 97 must have a detailed improvement plan with gap analysis, ordered steps, file paths, acceptance criteria, and effort sizing. See output-templates.md Section 1.
 14. **Before/After Mermaid diagrams are mandatory.** Every scorecard must include a color-coded "Before" diagram showing current architecture problems and an "After" diagram showing the A+ target state. See output-templates.md Section 2.
 15. **Run discovery script first.** Always execute `scripts/discover.sh` before manual analysis to collect raw evidence systematically. Use dimension-specific runs (`discover.sh src d09`) for focused re-evaluation after changes.
+
+16. **Use LSP when available.** If LSP tools are active, use go-to-definition and find-references for M1.1 sync chain depth tracing and M5.2 data flow ownership analysis. LSP call hierarchy is more accurate than import graph tools for measuring actual call depth.

@@ -204,3 +204,13 @@ Output structure:
 12. **Before/After Mermaid diagrams are mandatory.** Show user flow transformation, not infrastructure.
 13. **Run discovery script first.** Execute `scripts/discover.sh` before manual analysis.
 14. **Include install commands.** Every shadcn recommendation includes the exact `npx shadcn@latest add` command.
+
+## Auto-Plan Integration
+
+After generating the scorecard and saving the report to `docs/audits/`:
+1. Save a copy of the report to `docs/rx-plans/{this-skill-name}/{date}-report.md`
+2. For each dimension scoring below 97, invoke the `rx-plan` skill to create or update the improvement plan at `docs/rx-plans/{this-skill-name}/{dimension}/v{N}-{date}-plan.md`
+3. Update `docs/rx-plans/{this-skill-name}/summary.md` with current scores
+4. Update `docs/rx-plans/dashboard.md` with overall progress
+
+This happens automatically — the user does not need to run `/rx-plan` separately.

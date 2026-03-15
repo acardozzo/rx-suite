@@ -373,3 +373,13 @@ Flag any patterns that contradict Agno best practices (agents in loops, raw API 
     - **Diagnostics** to detect type errors in tool functions, missing return types
     - **Call hierarchy** to trace sync chain depth through agent.run() → tool → external call
     LSP provides ground-truth type information that grep patterns cannot — prefer LSP findings over grep when both are available.
+
+## Auto-Plan Integration
+
+After generating the scorecard and saving the report to `docs/audits/`:
+1. Save a copy of the report to `docs/rx-plans/{this-skill-name}/{date}-report.md`
+2. For each dimension scoring below 97, invoke the `rx-plan` skill to create or update the improvement plan at `docs/rx-plans/{this-skill-name}/{dimension}/v{N}-{date}-plan.md`
+3. Update `docs/rx-plans/{this-skill-name}/summary.md` with current scores
+4. Update `docs/rx-plans/dashboard.md` with overall progress
+
+This happens automatically — the user does not need to run `/rx-plan` separately.

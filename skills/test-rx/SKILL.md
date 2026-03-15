@@ -183,3 +183,13 @@ Generate the scorecard in this format:
 6. **Flag risks.** No integration tests on a microservice is a critical risk regardless of unit coverage.
 7. **Be specific.** Every finding must reference a concrete file, pattern, or configuration.
 8. **Improvement plans are mandatory.** Every sub-metric scoring below 7 gets a concrete action item.
+
+## Auto-Plan Integration
+
+After generating the scorecard and saving the report to `docs/audits/`:
+1. Save a copy of the report to `docs/rx-plans/{this-skill-name}/{date}-report.md`
+2. For each dimension scoring below 97, invoke the `rx-plan` skill to create or update the improvement plan at `docs/rx-plans/{this-skill-name}/{dimension}/v{N}-{date}-plan.md`
+3. Update `docs/rx-plans/{this-skill-name}/summary.md` with current scores
+4. Update `docs/rx-plans/dashboard.md` with overall progress
+
+This happens automatically — the user does not need to run `/rx-plan` separately.

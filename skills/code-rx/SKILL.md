@@ -310,3 +310,13 @@ When `all`: save individual layer scorecards + aggregate to `docs/audits/YYYY-MM
 7. **Top 5 issues must be actionable.** Include file paths and estimated point impact.
 
 8. **Use LSP when available.** If LSP tools are active (pyright/vtsls), leverage type diagnostics for D7 Type Safety scoring and go-to-definition for D2 Dependency Health analysis. LSP provides ground-truth type information that static grep cannot.
+
+## Auto-Plan Integration
+
+After generating the scorecard and saving the report to `docs/audits/`:
+1. Save a copy of the report to `docs/rx-plans/{this-skill-name}/{date}-report.md`
+2. For each dimension scoring below 97, invoke the `rx-plan` skill to create or update the improvement plan at `docs/rx-plans/{this-skill-name}/{dimension}/v{N}-{date}-plan.md`
+3. Update `docs/rx-plans/{this-skill-name}/summary.md` with current scores
+4. Update `docs/rx-plans/dashboard.md` with overall progress
+
+This happens automatically — the user does not need to run `/rx-plan` separately.

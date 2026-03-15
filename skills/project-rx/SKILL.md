@@ -410,3 +410,13 @@ Flag any components at score 40 (minimal) that need upgrading before production.
 14. **Respect the project's tech stack.** Suggestions in the build plan must use the project's existing framework, language, and tooling. Don't suggest Django solutions for a Next.js project.
 
 15. **Run this skill before other rx skills.** project-rx identifies WHAT to build; other rx skills assess HOW WELL it's built. The recommended workflow is: project-rx first, build missing components, then run specific rx skills for quality assessment.
+
+## Auto-Plan Integration
+
+After generating the scorecard and saving the report to `docs/audits/`:
+1. Save a copy of the report to `docs/rx-plans/{this-skill-name}/{date}-report.md`
+2. For each dimension scoring below 97, invoke the `rx-plan` skill to create or update the improvement plan at `docs/rx-plans/{this-skill-name}/{dimension}/v{N}-{date}-plan.md`
+3. Update `docs/rx-plans/{this-skill-name}/summary.md` with current scores
+4. Update `docs/rx-plans/dashboard.md` with overall progress
+
+This happens automatically — the user does not need to run `/rx-plan` separately.

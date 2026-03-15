@@ -268,3 +268,13 @@ When `all`: save individual layer scorecards + aggregate to `docs/audits/YYYY-MM
 15. **Run discovery script first.** Always execute `scripts/discover.sh` before manual analysis to collect raw evidence systematically. Use dimension-specific runs (`discover.sh src d09`) for focused re-evaluation after changes.
 
 16. **Use LSP when available.** If LSP tools are active, use go-to-definition and find-references for M1.1 sync chain depth tracing and M5.2 data flow ownership analysis. LSP call hierarchy is more accurate than import graph tools for measuring actual call depth.
+
+## Auto-Plan Integration
+
+After generating the scorecard and saving the report to `docs/audits/`:
+1. Save a copy of the report to `docs/rx-plans/{this-skill-name}/{date}-report.md`
+2. For each dimension scoring below 97, invoke the `rx-plan` skill to create or update the improvement plan at `docs/rx-plans/{this-skill-name}/{dimension}/v{N}-{date}-plan.md`
+3. Update `docs/rx-plans/{this-skill-name}/summary.md` with current scores
+4. Update `docs/rx-plans/dashboard.md` with overall progress
+
+This happens automatically — the user does not need to run `/rx-plan` separately.

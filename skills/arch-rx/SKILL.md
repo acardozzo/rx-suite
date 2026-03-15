@@ -10,6 +10,13 @@ description: >
   (44 sub-metrics). Stack-agnostic — adapts to Node.js, Go, JVM, Python, Rust, .NET.
 ---
 
+## Prerequisites
+
+Recommended: `madge`, `hadolint`, `syft`
+
+Check all dependencies: `bash scripts/rx-deps.sh` or `bash scripts/rx-deps.sh --install`
+
+
 # Architectural Decision & Pattern Fitness Grading
 
 Evaluate architectural pattern fitness using 11 weighted dimensions and 44 sub-metrics.

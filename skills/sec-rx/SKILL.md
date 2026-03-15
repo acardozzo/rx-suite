@@ -9,6 +9,13 @@ triggers:
   - "security review"
 ---
 
+## Prerequisites
+
+Recommended: `semgrep` (`brew install semgrep`)
+
+Check all dependencies: `bash scripts/rx-deps.sh` or `bash scripts/rx-deps.sh --install`
+
+
 # sec-rx — Code-Level Security Posture Evaluation
 
 Evaluates source code for security vulnerabilities, misconfigurations, and missing protections. Maps findings to OWASP Top 10 2021, ASVS 4.0, and CWE entries.

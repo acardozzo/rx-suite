@@ -3,6 +3,13 @@ name: project-agno-rx
 description: Specialist evaluation for Agno AI agent projects. Evaluates agent design, tool usage, knowledge/RAG setup, memory management, team coordination, workflow orchestration, deployment readiness, and observability against Agno best practices. Use when building with Agno, auditing agent quality, or when the user says "agno audit", "run project-agno-rx", "evaluate my agents", "agno best practices", or "agent quality check". Measures 10 dimensions (40 sub-metrics) specific to the Agno framework.
 ---
 
+## Prerequisites
+
+Optional: `pyright` for type-aware analysis (`pip install pyright`)
+
+Check all dependencies: `bash scripts/rx-deps.sh` or `bash scripts/rx-deps.sh --install`
+
+
 # project-agno-rx — Agno AI Agent Quality Inspector
 
 > "Is this Agno project using the framework correctly and leveraging all available capabilities for a world-class A+ agentic system?"

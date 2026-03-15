@@ -11,6 +11,13 @@ description: >
   with actionable prescriptions.
 ---
 
+## Prerequisites
+
+None (POSIX only). Optional: Firecrawl MCP
+
+Check all dependencies: `bash scripts/rx-deps.sh` or `bash scripts/rx-deps.sh --install`
+
+
 # API Surface Design Quality Grading
 
 Evaluate API design quality using 8 weighted dimensions and 32 sub-metrics with exact,

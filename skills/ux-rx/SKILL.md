@@ -11,6 +11,13 @@ description: >
   recommend ready-to-use components. Outputs per-page scorecards with before/after Mermaid diagrams.
 ---
 
+## Prerequisites
+
+Recommended: `lighthouse` (`npm i -g @lhci/cli`), `pa11y`. Optional: Playwright MCP
+
+Check all dependencies: `bash scripts/rx-deps.sh` or `bash scripts/rx-deps.sh --install`
+
+
 # UX/UI Pattern Fitness Grading
 
 Evaluate UX/UI pattern fitness using 11 weighted dimensions and 44 sub-metrics.

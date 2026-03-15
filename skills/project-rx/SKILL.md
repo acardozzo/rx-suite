@@ -3,6 +3,13 @@ name: project-rx
 description: Project completeness inspector — identifies missing components, capabilities, and infrastructure for your project type. Detects project archetype (SaaS, API Platform, Marketplace, Internal Tool, Mobile Backend, AI Product, CLI, Library) and evaluates against a mandatory component checklist. Use when starting a project, planning features, doing gap analysis, or when the user says "what's missing", "run project-rx", "project audit", "completeness check", "gap analysis", "what should I build next", or "inspect project". Produces a completeness scorecard with prioritized build plan.
 ---
 
+## Prerequisites
+
+None (POSIX only)
+
+Check all dependencies: `bash scripts/rx-deps.sh` or `bash scripts/rx-deps.sh --install`
+
+
 # project-rx — Project Completeness Inspector
 
 > "What does this project NEED but DOESN'T HAVE?"

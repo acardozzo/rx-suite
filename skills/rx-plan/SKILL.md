@@ -8,6 +8,13 @@ description: >
   "improvement plan", "plan from audit", or "next steps from rx".
 ---
 
+## Prerequisites
+
+None (uses git for worktrees)
+
+Check all dependencies: `bash scripts/rx-deps.sh` or `bash scripts/rx-deps.sh --install`
+
+
 # rx-plan -- Versioned Improvement Plan Generator
 
 Reads rx report results and generates actionable, versioned improvement plans for every dimension

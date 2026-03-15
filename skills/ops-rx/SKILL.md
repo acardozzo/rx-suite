@@ -17,6 +17,13 @@ triggers:
   - "production readiness review"
 ---
 
+## Prerequisites
+
+None (POSIX only)
+
+Check all dependencies: `bash scripts/rx-deps.sh` or `bash scripts/rx-deps.sh --install`
+
+
 # ops-rx — Operational & SRE Maturity Diagnostic
 
 ## Purpose

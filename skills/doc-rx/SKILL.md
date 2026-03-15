@@ -8,6 +8,13 @@ description: >
   actionable recommendations.
 ---
 
+## Prerequisites
+
+None (POSIX only)
+
+Check all dependencies: `bash scripts/rx-deps.sh` or `bash scripts/rx-deps.sh --install`
+
+
 # doc-rx — Documentation & Developer Experience Audit
 
 ## Purpose

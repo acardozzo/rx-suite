@@ -10,6 +10,13 @@ description: >
   package metrics, SIG, and CodeClimate. Produces per-layer scorecards and aggregate grades.
 ---
 
+## Prerequisites
+
+Optional: `pyright`, `vtsls` for type safety scoring
+
+Check all dependencies: `bash scripts/rx-deps.sh` or `bash scripts/rx-deps.sh --install`
+
+
 # Code Quality & Hygiene Grading
 
 Evaluate architecture quality using 8 weighted dimensions and 29 sub-metrics with exact,

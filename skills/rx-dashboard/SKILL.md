@@ -7,6 +7,13 @@ description: >
   "improvement status", "plan status", "show dashboard", "rx overview", or "what should I work on".
 ---
 
+## Prerequisites
+
+None (POSIX only)
+
+Check all dependencies: `bash scripts/rx-deps.sh` or `bash scripts/rx-deps.sh --install`
+
+
 # rx-dashboard -- Global Progress Dashboard
 
 Aggregates and displays the current state of all rx-suite evaluations and improvement plans.

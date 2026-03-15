@@ -9,6 +9,13 @@ triggers:
   - "test quality review"
 ---
 
+## Prerequisites
+
+Recommended: `lighthouse`, `pa11y`
+
+Check all dependencies: `bash scripts/rx-deps.sh` or `bash scripts/rx-deps.sh --install`
+
+
 # test-rx: Testing Strategy Diagnostic
 
 ## Purpose
